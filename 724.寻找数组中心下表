@@ -1,0 +1,10 @@
+class Solution(object):
+    def pivotIndex(self, nums):
+        n = len(nums)
+        sums_ = sum(nums)
+        preSum = 0
+        for i in range(n):
+            if preSum == sums_ - preSum - nums[i]:
+                return i
+            preSum += nums[i]
+        return -1
