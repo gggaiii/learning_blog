@@ -1,0 +1,16 @@
+name: urbanity
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.9
+  - geopandas
+  - ipykernel
+  - ipyleaflet
+  - ipywidgets==8.0.2
+  - rasterio
+  - contextily
+  - pyarrow
+  - pip:
+    - urbanity==0.4.0
+prefix: /Users/winston/miniconda3/envs/urbanity
